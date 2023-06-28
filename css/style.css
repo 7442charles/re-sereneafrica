@@ -153,7 +153,6 @@
   .navbar-toggler-icon {
     width: 30px;
     height: 30px;
-    background-image: url("path/to/your/toggle-icon.png");
     background-size: cover;
     transition: transform 0.3s ease;
   }
