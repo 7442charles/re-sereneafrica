@@ -49,6 +49,7 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
     
     <link href="css/style.css" rel="stylesheet" />
   </head>
@@ -136,8 +137,8 @@
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
-            </li>
+              <a href="#" data-bs-toggle="modal" class="nav-link" data-bs-target="#loginModal">Login</a>
+          </li>
           </ul>
         </div>
   
@@ -605,70 +606,138 @@
     </div>
     <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <footer class="footer" id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 py-5">
-            <img src="img/tripAdvisorLogo.png">
-            <h2>Serene Africa Safaris Limited</h2>
-            <br>
-            <div>Trip Advisor Rating</div> 
-            <span class="fa fa-star text-warning"></span>
-            <span class="fa fa-star text-warning"></span>
-            <span class="fa fa-star text-warning"></span>
-            <span class="fa fa-star text-warning"></span>
-            <span class="fa fa-star text-warning"></span>
-            <span>56 reviews</span>
-            <br>
-            <div>
-              <h3>Trip Advisor Ranking</h3>
-            </div>
-            <p>154 of 1298 outdoor Nairobi</p>
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-out">
 
-            <div class="social-icons">
-              <a href="https://www.facebook.com/pages/Serene-East-Africa-Safaris/220364751339043" target="_blank"><i class="fab fa-facebook text-info"></i></a>
-              <a href="https://twitter.com/serenesafarisKE" target="_blank"><i class="fab fa-twitter" style="color:#1DA1F2;"></i></a>
-              <a href="https://plus.google.com/u/0/116948716448926989076" target="_blank"><i class="fab fa-google-plus text-danger"></i></a>
-              <a href="https://www.flickr.com/photos/sereneafrica/" target="_blank"><i class="fab fa-flickr"></i></a>
-            </div>
-      
-          </div>
-          <div class="col-md-4">
-            <img src="img/kato-bonded.jpg" alt="kato-bonded">
-            <img src="img/amref.jpg" alt="Amref">
-            <img src="img/payments.png" alt="payments">
-          </div>
-          <div class="col-md-4" id="contact">
-            <div class="address">
-              <p class="address-line">Serene East Africa Safaris Ltd.</p>
-              <p class="address-line">P.O. Box 824 - 00515</p>
-              <p class="address-line">Buruburu Business Complex,</p>
-              <p class="address-line">2nd Floor, Suite 30, Nairobi, Kenya.</p>
-            </div>
-            
-            <div class="address">
-              <p class="address-line">Mobile: +254 724 899560,</p>
-              <p class="address-line">+254 727 341240,</p>
-              <p class="address-line">Office hours: +254 710 547807</p>
-              <p class="address-line">Email: info@sereneafrica.com</p>
-            </div>
-            <div class="address">
-              <p class="address-line"> North America Office</p>
-              <p class="address-line">Toll Free No: 1-800-891-6173</p>
-              <p class="address-line">Email: northamerica@sereneafrica.com</p>
-            </div>
-            
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="img/clients/kato-bonded.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/payments.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/amref.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/viator.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/pesapal.jpg" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/tra.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/tripadvisor.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="img/clients/kws.png" class="img-fluid" alt=""></div>
           </div>
         </div>
-        <div class="container">
-          <span>&copy; 2023 Serene Africa Safaris Limited. All rights reserved.
-        </div>
+
       </div>
-    </footer>
-    <!-- Footer End -->
-
+    </section><!-- End Clients Section -->
    
+<!-- Footer -->
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#905a2b;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-col" style="color: #ffffff;">
+                    <h4>North America</h4>
+                    <div><i class="bi bi-geo-alt"></i> Office: Fake Address, North America</div>
+                    <br>
+                    <div><i class="bi bi-envelope"></i> Email: <a href="mailto:peterkiura@sereneafrica.com" style="color: #ffffff;">peterkiura@sereneafrica.com</a></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-col" style="color: #ffffff;">
+                    <h4>Nairobi Offices</h4>
+                    <div><i class="bi bi-geo-alt"></i> Office: Buruburu Business Complex, <br>
+                      2nd Floor, Suite 30, Nairobi, Kenya.</div> <br>
+                    <div><i class="bi bi-envelope"></i> Email: <a href="mailto: info@sereneafrica.com" style="color: #ffffff;">info@sereneafrica.com</a></div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="footer-col" style="color: #ffffff;">
+                    <h4>Contact</h4>
+                    <div><i class="bi bi-telephone"></i> Phone No: +1 (862) 253 -7783</div>
+                    <div><i class="bi bi-telephone"></i> Phone No: +254 722 210968</div>
+                    <div><i class="bi bi-telephone"></i> Phone No: +254 724 899560</div>
+                    <div><i class="bi bi-geo-alt"></i> P.O. Box 824 - 00515</div>
+                </div>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->
+<!-- end of footer -->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content" style="border-radius: 10px;">
+              <div class="modal-header" style="border-radius: 10px 10px 0 0; background-color: #905a2b; color: #ffffff;">
+                  <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: #ffffff;">&times;</span>
+                  </button> -->
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="username">Username</label>
+                          <input type="text" class="form-control" id="username" placeholder="Enter your username" style="border-radius: 5px;">
+                      </div>
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter your password" style="border-radius: 5px;">
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer" style="border-radius: 0 0 10px 10px;">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-primary" style="border-radius: 5px;">Login</button>
+              </div>
+              <div class="text-center">
+                  <p>Don't have an account? <a href="#"  data-bs-toggle="modal" class="nav-link" data-bs-target="#registerModal" >Sign up</a></p>
+                  <p>Forgot your password? <a href="#">Reset password</a></p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content" style="border-radius: 10px;">
+              <div class="modal-header" style="border-radius: 10px 10px 0 0; background-color: #905a2b; color: #ffffff;">
+                  <h5 class="modal-title" id="registerModalLabel">Register</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="color: #ffffff;">&times;</span>
+                  </button> -->
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="form-group">
+                          <label for="fullname">Full Name</label>
+                          <input type="text" class="form-control" id="fullname" placeholder="Enter your full name" style="border-radius: 5px;">
+                      </div>
+                      <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email" style="border-radius: 5px;">
+                      </div>
+                      <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Enter your password" style="border-radius: 5px;">
+                      </div>
+                      <div class="form-group">
+                        <label for="password"> Confirm Password</label>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Re-Enter your password" style="border-radius: 5px;">
+                    </div>
+                  </form>
+              </div>
+              <div class="modal-footer" style="border-radius: 0 0 10px 10px;">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-primary" style="border-radius: 5px;">Register</button>
+              </div>
+              
+          </div>
+      </div>
+    </div>
+
+
+    
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -680,7 +749,7 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
-
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
     <!--  Javascript -->
     <script src="js/main.js"></script>
   </body>
